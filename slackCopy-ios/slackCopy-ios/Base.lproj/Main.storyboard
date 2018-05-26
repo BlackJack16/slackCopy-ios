@@ -164,23 +164,17 @@
                                 <rect key="frame" x="331" y="28" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E7s-9R-abp">
-                                <rect key="frame" x="62" y="286" width="250" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-xH-Nsn">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
-                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-xH-Nsn">
+                                <rect key="frame" x="62" y="286" width="250" height="33"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="SC5-uw-sI7"/>
-                                    <constraint firstAttribute="height" constant="50" id="x6r-KE-Tng"/>
+                                    <constraint firstAttribute="width" constant="250" id="BxZ-GC-DjE"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4by-oF-188">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
                                 <subviews>
@@ -221,10 +215,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-s1-eMD">
-                                <rect key="frame" x="82" y="336" width="211" height="27"/>
+                                <rect key="frame" x="82" y="319" width="211" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="211" id="30E-o3-6yc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="cga-wm-utp"/>
                                     <constraint firstAttribute="height" constant="27" id="dAB-84-jhW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="ejf-xs-e5w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Don't have an account? Sign up here">
@@ -234,16 +230,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="E7s-9R-abp" firstAttribute="top" secondItem="4by-oF-188" secondAttribute="bottom" constant="40" id="3CY-g5-XvW"/>
+                            <constraint firstItem="ENu-s1-eMD" firstAttribute="centerX" secondItem="9Fb-DF-t9h" secondAttribute="centerX" id="2vM-fK-LTs"/>
                             <constraint firstItem="4by-oF-188" firstAttribute="top" secondItem="KBs-2u-BpB" secondAttribute="bottom" constant="40" id="CSx-hi-ZMr"/>
                             <constraint firstItem="4by-oF-188" firstAttribute="centerX" secondItem="9Fb-DF-t9h" secondAttribute="centerX" id="FSV-SU-ii8"/>
                             <constraint firstItem="KBs-2u-BpB" firstAttribute="top" secondItem="hOc-iE-mhP" secondAttribute="top" constant="60" id="RXf-Rj-v2Y"/>
+                            <constraint firstItem="ENu-s1-eMD" firstAttribute="top" secondItem="HaJ-xH-Nsn" secondAttribute="bottom" id="TgS-UZ-hMv"/>
                             <constraint firstItem="hOc-iE-mhP" firstAttribute="trailing" secondItem="9rf-PP-Hqg" secondAttribute="trailing" constant="16" id="Uve-KK-483"/>
+                            <constraint firstItem="HaJ-xH-Nsn" firstAttribute="centerX" secondItem="9Fb-DF-t9h" secondAttribute="centerX" id="cqU-RA-Abu"/>
+                            <constraint firstItem="HaJ-xH-Nsn" firstAttribute="top" secondItem="4by-oF-188" secondAttribute="bottom" constant="40" id="esa-hC-Qde"/>
                             <constraint firstItem="9rf-PP-Hqg" firstAttribute="top" secondItem="hOc-iE-mhP" secondAttribute="top" constant="8" id="hBN-Xb-mfj"/>
                             <constraint firstItem="KBs-2u-BpB" firstAttribute="centerX" secondItem="9Fb-DF-t9h" secondAttribute="centerX" id="kVu-4T-ozQ"/>
                             <constraint firstItem="KBs-2u-BpB" firstAttribute="centerX" secondItem="9Fb-DF-t9h" secondAttribute="centerX" id="qnI-jZ-fag"/>
-                            <constraint firstItem="ENu-s1-eMD" firstAttribute="top" secondItem="E7s-9R-abp" secondAttribute="bottom" id="wny-jd-Gma"/>
-                            <constraint firstItem="ENu-s1-eMD" firstAttribute="centerX" secondItem="9Fb-DF-t9h" secondAttribute="centerX" id="yBw-7P-5v5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hOc-iE-mhP"/>
                     </view>
