@@ -13,6 +13,7 @@
 		C90D4F6320B94711000F7ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90D4F6120B94711000F7ADE /* Main.storyboard */; };
 		C90D4F6520B94713000F7ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90D4F6420B94713000F7ADE /* Assets.xcassets */; };
 		C90D4F6820B94713000F7ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90D4F6620B94713000F7ADE /* LaunchScreen.storyboard */; };
+		C9D2D96920B94B30001ACA40 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D2D96720B94B2F001ACA40 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		C90D4F6420B94713000F7ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90D4F6720B94713000F7ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90D4F6920B94713000F7ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D2D96620B94B2E001ACA40 /* slackCopy-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "slackCopy-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9D2D96720B94B2F001ACA40 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C9D2D96820B94B30001ACA40 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		C90D4F5120B94711000F7ADE = {
 			isa = PBXGroup;
 			children = (
+				C9D2D96520B94AD5001ACA40 /* Supporting Files */,
 				C90D4F5C20B94711000F7ADE /* slackCopy-ios */,
 				C90D4F5B20B94711000F7ADE /* Products */,
 				4F9DA6F5B32F71D12F1690FC /* Pods */,
@@ -78,6 +83,16 @@
 				C90D4F6920B94713000F7ADE /* Info.plist */,
 			);
 			path = "slackCopy-ios";
+			sourceTree = "<group>";
+		};
+		C9D2D96520B94AD5001ACA40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9D2D96820B94B30001ACA40 /* SWRevealViewController.h */,
+				C9D2D96720B94B2F001ACA40 /* SWRevealViewController.m */,
+				C9D2D96620B94B2E001ACA40 /* slackCopy-ios-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F0A9C76B5944CC8F60996D5E /* Frameworks */ = {
@@ -122,6 +137,7 @@
 				TargetAttributes = {
 					C90D4F5920B94711000F7ADE = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -208,6 +224,7 @@
 			files = (
 				C90D4F6020B94711000F7ADE /* ViewController.swift in Sources */,
 				C90D4F5E20B94711000F7ADE /* AppDelegate.swift in Sources */,
+				C9D2D96920B94B30001ACA40 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +369,7 @@
 			baseConfigurationReference = 87CB52C10A0AF7869E45F007 /* Pods-slackCopy-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97BJY29T52;
 				INFOPLIST_FILE = "slackCopy-ios/Info.plist";
@@ -361,6 +379,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "codemania.id.slackCopy-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/slackCopy-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,6 +391,7 @@
 			baseConfigurationReference = 58ABC321C2257463FEDE0F77 /* Pods-slackCopy-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97BJY29T52;
 				INFOPLIST_FILE = "slackCopy-ios/Info.plist";
@@ -380,6 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "codemania.id.slackCopy-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/slackCopy-ios-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
