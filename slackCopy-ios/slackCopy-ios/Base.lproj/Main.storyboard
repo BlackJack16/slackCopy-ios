@@ -33,16 +33,73 @@
         <scene sceneID="fKp-BQ-hYr">
             <objects>
                 <viewController id="2Nh-qi-apS" customClass="channelVC" customModule="slackCopy_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Z1o-g5-c2x">
+                    <view key="view" contentMode="scaleToFill" id="Z1o-g5-c2x" customClass="gradientView" customModule="slackCopy_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codemania" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wd-XB-G5O">
+                                <rect key="frame" x="16" y="44" width="104" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-VX-1lJ">
+                                <rect key="frame" x="16" y="91" width="64" height="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAF-4L-sQa">
+                                <rect key="frame" x="281" y="88.5" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoA-1K-fxa">
+                                <rect key="frame" x="115" y="588" width="51" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="w12-NF-Cnk">
+                                <rect key="frame" x="16" y="568" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8en-yE-33F"/>
+                                    <constraint firstAttribute="width" constant="75" id="lWo-8a-cRi"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ypz-Uo-EZH">
+                                <rect key="frame" x="0.0" y="130.5" width="375" height="417.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MoA-1K-fxa" firstAttribute="leading" secondItem="w12-NF-Cnk" secondAttribute="trailing" constant="24" id="0H5-ya-1w2"/>
+                            <constraint firstItem="zMa-VX-1lJ" firstAttribute="leading" secondItem="CAS-XU-8Kl" secondAttribute="leading" constant="16" id="3G1-e2-NMC"/>
+                            <constraint firstItem="pAF-4L-sQa" firstAttribute="centerY" secondItem="zMa-VX-1lJ" secondAttribute="centerY" id="4eb-dX-so8"/>
+                            <constraint firstItem="Ypz-Uo-EZH" firstAttribute="leading" secondItem="CAS-XU-8Kl" secondAttribute="leading" id="A20-JO-tth"/>
+                            <constraint firstItem="4wd-XB-G5O" firstAttribute="leading" secondItem="CAS-XU-8Kl" secondAttribute="leading" constant="16" id="APS-IT-mJi"/>
+                            <constraint firstItem="zMa-VX-1lJ" firstAttribute="top" secondItem="4wd-XB-G5O" secondAttribute="bottom" constant="24" id="BAf-mc-V4w"/>
+                            <constraint firstItem="Ypz-Uo-EZH" firstAttribute="top" secondItem="pAF-4L-sQa" secondAttribute="bottom" constant="20" id="GO1-O0-ybk"/>
+                            <constraint firstItem="Ypz-Uo-EZH" firstAttribute="trailing" secondItem="CAS-XU-8Kl" secondAttribute="trailing" id="K9A-9D-vCt"/>
+                            <constraint firstItem="w12-NF-Cnk" firstAttribute="top" secondItem="Ypz-Uo-EZH" secondAttribute="bottom" constant="20" id="Lw4-qp-b4m"/>
+                            <constraint firstItem="w12-NF-Cnk" firstAttribute="leading" secondItem="CAS-XU-8Kl" secondAttribute="leading" constant="16" id="XZo-1B-Ppv"/>
+                            <constraint firstItem="CAS-XU-8Kl" firstAttribute="bottom" secondItem="w12-NF-Cnk" secondAttribute="bottom" constant="24" id="dfY-uN-9uc"/>
+                            <constraint firstItem="4wd-XB-G5O" firstAttribute="top" secondItem="CAS-XU-8Kl" secondAttribute="top" constant="24" id="jbt-xh-YY2"/>
+                            <constraint firstItem="CAS-XU-8Kl" firstAttribute="trailing" secondItem="pAF-4L-sQa" secondAttribute="trailing" constant="72" id="n4T-CF-97J"/>
+                            <constraint firstItem="MoA-1K-fxa" firstAttribute="centerY" secondItem="w12-NF-Cnk" secondAttribute="centerY" id="z3J-tD-g6C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CAS-XU-8Kl"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.20808919270833334" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qg-4Q-jhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="-151"/>
+            <point key="canvasLocation" x="1032.8" y="-151.57421289355324"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="gQo-cx-k56">
@@ -52,7 +109,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJY-Hf-2ML">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJY-Hf-2ML" customClass="gradientView" customModule="slackCopy_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWW-Ej-etc">
@@ -63,9 +120,9 @@
                                         </constraints>
                                         <state key="normal" image="smackBurger"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codemania.id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-Vp-mVb">
-                                        <rect key="frame" x="136" y="45.5" width="102.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codemania" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-Vp-mVb">
+                                        <rect key="frame" x="141" y="46" width="93" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -98,6 +155,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
