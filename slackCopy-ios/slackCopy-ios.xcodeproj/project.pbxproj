@@ -16,6 +16,7 @@
 		C9D2D97020B95492001ACA40 /* channelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D2D96F20B95492001ACA40 /* channelVC.swift */; };
 		C9DA0F4B20B96FEA004033E4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F4A20B96FEA004033E4 /* SWRevealViewController.m */; };
 		C9DA0F4D20B97E47004033E4 /* gradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F4C20B97E47004033E4 /* gradientView.swift */; };
+		C9DA0F5020B9C150004033E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F4F20B9C150004033E4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C9DA0F4920B96FEA004033E4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C9DA0F4A20B96FEA004033E4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C9DA0F4C20B97E47004033E4 /* gradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradientView.swift; sourceTree = "<group>"; };
+		C9DA0F4F20B9C150004033E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		C90D4F5C20B94711000F7ADE /* slackCopy-ios */ = {
 			isa = PBXGroup;
 			children = (
+				C9DA0F4E20B9C0FF004033E4 /* Utillities */,
 				C9D2D96C20B94E9B001ACA40 /* Controller */,
 				C9D2D96B20B94E8E001ACA40 /* VIew */,
 				C9D2D96A20B94E86001ACA40 /* Model */,
@@ -123,6 +126,14 @@
 				C9D2D96F20B95492001ACA40 /* channelVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9DA0F4E20B9C0FF004033E4 /* Utillities */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA0F4F20B9C150004033E4 /* Constants.swift */,
+			);
+			path = Utillities;
 			sourceTree = "<group>";
 		};
 		F0A9C76B5944CC8F60996D5E /* Frameworks */ = {
@@ -257,6 +268,7 @@
 				C9DA0F4D20B97E47004033E4 /* gradientView.swift in Sources */,
 				C9D2D96E20B9544F001ACA40 /* chatVC.swift in Sources */,
 				C9DA0F4B20B96FEA004033E4 /* SWRevealViewController.m in Sources */,
+				C9DA0F5020B9C150004033E4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
