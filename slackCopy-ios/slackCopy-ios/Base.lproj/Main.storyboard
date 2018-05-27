@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="1032.8" y="-151.57421289355324"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="zzb-na-cAE">
             <objects>
-                <viewController id="Cfv-sa-K8C" sceneMemberID="viewController">
+                <viewController id="Cfv-sa-K8C" customClass="loginVC" customModule="slackCopy_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Fb-DF-t9h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,6 +163,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-PP-Hqg">
                                 <rect key="frame" x="331" y="28" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="Cfv-sa-K8C" eventType="touchUpInside" id="g9P-hb-kSm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-xH-Nsn">
                                 <rect key="frame" x="62" y="286" width="250" height="33"/>
