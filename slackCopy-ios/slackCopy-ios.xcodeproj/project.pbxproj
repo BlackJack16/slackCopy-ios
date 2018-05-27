@@ -18,6 +18,7 @@
 		C9DA0F4D20B97E47004033E4 /* gradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F4C20B97E47004033E4 /* gradientView.swift */; };
 		C9DA0F5020B9C150004033E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F4F20B9C150004033E4 /* Constants.swift */; };
 		C9DA0F5220B9CAA4004033E4 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F5120B9CAA4004033E4 /* loginVC.swift */; };
+		C9DA0F5420BA854A004033E4 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA0F5320BA854A004033E4 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C9DA0F4C20B97E47004033E4 /* gradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradientView.swift; sourceTree = "<group>"; };
 		C9DA0F4F20B9C150004033E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9DA0F5120B9CAA4004033E4 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		C9DA0F5320BA854A004033E4 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				C9D2D96D20B9544F001ACA40 /* chatVC.swift */,
 				C9D2D96F20B95492001ACA40 /* channelVC.swift */,
 				C9DA0F5120B9CAA4004033E4 /* loginVC.swift */,
+				C9DA0F5320BA854A004033E4 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				C9D2D97020B95492001ACA40 /* channelVC.swift in Sources */,
 				C90D4F5E20B94711000F7ADE /* AppDelegate.swift in Sources */,
+				C9DA0F5420BA854A004033E4 /* CreateAccountVC.swift in Sources */,
 				C9DA0F4D20B97E47004033E4 /* gradientView.swift in Sources */,
 				C9DA0F5220B9CAA4004033E4 /* loginVC.swift in Sources */,
 				C9D2D96E20B9544F001ACA40 /* chatVC.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 class channelVC: UIViewController {
-
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     @IBOutlet weak var btnLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
