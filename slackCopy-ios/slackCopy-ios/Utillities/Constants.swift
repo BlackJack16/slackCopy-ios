@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias CompletionHandler = (_Success: Bool) ->()
+typealias CompletionHandler = (_ Success: Bool) ->()
 
 //url Constant
 let BASE_URL = "http://localhost:3005/v1"
@@ -22,4 +22,4 @@ let UNWIND  = "unwindToChannel"
 //user Defaults
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
-let USER_EMAIL = "userEmail
+let USER_EMAIL = "userEmail"
